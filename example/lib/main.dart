@@ -18,8 +18,6 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  final _sdsSharePdfPlugin = SdsSharePdf();
-
   @override
   void initState() {
     super.initState();
@@ -34,7 +32,7 @@ class _MyAppState extends State<MyApp> {
       );
       final path = result?.files.firstOrNull?.path;
       if (path != null) {
-        await _sdsSharePdfPlugin.sharePdf(path);
+        await SdsSharePdf.sharePdf(path);
       } else {
         log('No file selected');
       }

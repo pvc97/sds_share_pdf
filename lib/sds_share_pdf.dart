@@ -1,7 +1,9 @@
 import 'sds_share_pdf_platform_interface.dart';
 
-class SdsSharePdf {
-  Future<void> sharePdf(String path) {
+abstract class SdsSharePdf {
+  const SdsSharePdf._();
+
+  static Future<void> sharePdf(String path) {
     return SdsSharePdfPlatform.instance.sharePdf(path);
   }
 }
