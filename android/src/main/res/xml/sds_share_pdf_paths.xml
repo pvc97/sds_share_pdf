@@ -3,4 +3,6 @@
     <cache-path name="cache" path="." />
     <external-files-path name="external_files" path="." />
     <files-path name="files" path="." />
+    <!-- Mở rộng thêm nếu cần: root của filesystem -->
+    <root-path name="root" path="." />
 </paths>
